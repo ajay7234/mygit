@@ -11,3 +11,82 @@
     
 </body>
 </html>
+
+
+git --version
+git config --global user.name "Ajay Patil"
+git config --global user.email "ajay1998patl999@gmail.com"
+git config  --list
+git config --help
+git init   //create git file in folder
+ls -lart // show all and  hiddlean file
+git add _A  //add all file in staging area        //it compslry  to commit filr
+git commit -m "initial added"
+git checkout home.html        //it replace the file back to last commite
+git checkout -f                      // it replace all file bck to the last commite
+git log -p -1                          // number of commite you want to shows
+git diff                                 // it show the past and present changes in working directory
+git diff --staged                    // it show changes to last commite
+git commit -a -m " skipped staging area and fiexd"     // set fixed commit
+touch aj.html				//create new file
+git rm aj.html				//delete the file 
+git rm --cached about.js		// it remove the file in current staged areas
+//++++++++++++Git Ignore++++++++++++
+touch .gitignore                     //Create gitignore file if any file name put in the gitignore file then it automatically ignored in under file(/mylogs)
+
+//++++++++++++Branch+++++++++++++
+git branch                             // it show all branch 
+git branch features1             // create new branch or copy named features1
+// When we switch one branch to another the back you switch current working data
+
+git merge features1           // it will be merge the features1 code with master branch code
+git checkout -b flask	    // create the new branch and also enter that branch
+++++++++++++Github+++++++++++++
+
+git remote add origin "likn"     // connect with remote github   //origin it simply name of the url or this connection
+
+git remote or git remote -v			// show all remote repository
+git push origin master
+
+
+setting->gui and ssh->gnerate key
+key:SHA256:gG+9vvU6PETP7rIYrHjLc0L+YKdsAd2uAknvlUWX20o ajay1998patil999@gmail.com
+
+
+ssh-keygen -t ed25519 -C "ajay1998patil999@gmail.com"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+cat ~/.ssh/id_ed25519.pub
+
+git push -u origin
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+git remote set -url origin git@github.com:ajay7234/Work.git
+err
+
+git remote set-url origin git@github.com:ajay7234/Work.git
+
+git remote -v
+origin	git@github.com:ajay7234/Work.git (fetch)
+origin	git@github.com:ajay7234/Work.git (push)
+
+git push -u origin master
+yes
+
+git checkout master
+
+git push -u origin features1
+
+
+
+
+    git push --set-upstream origin master
+
+
+
+
+
+
+
+
